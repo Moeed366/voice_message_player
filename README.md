@@ -51,10 +51,10 @@ flutter pub get
 
 ## How to use
 
-All you need is pass your audio file src to VoiceMessage widget:
+All you need is pass your audio file src to VoiceMessagePlayer widget:
 
 ```dart
-VoiceMessageView(
+VoiceMessagePlayer(
   controller: VoiceController(
     audioSrc:
         'https://dl.solahangs.com/Music/1403/02/H/128/Hiphopologist%20-%20Shakkak%20%28128%29.mp3',
