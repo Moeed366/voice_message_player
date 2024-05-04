@@ -94,18 +94,14 @@ VoiceMessageView(
 
 
 <h2>
-<a style="text-decoration: none; color: #0000ff" href="https://mehran.monster/">www.mehran.monster</a>
+<a style="text-decoration: none; color: #0000ff" href="https://github.com/Moeed366">Moeed366</a>
 </h2>
 
 <div style="height:16px;"></div>
 ### Contributing
 
-##### :beer: Pull requests are welcome!
-
-Don't forget that `open-source` makes no sense without contributors. No matter how big your changes are, it helps us a lot even it is a line of change.
 
 ## License
 
-Licensed under the MIT license. See [LICENSE](https://github.com/mehranshoqi/voice_message_player/blob/master/LICENSE "LICENSE").
+Licensed under the MIT license. See [LICENSE](https://github.com/Moeed366/voice_message_player/blob/main/LICENSE "LICENSE").
 
-بم میگن اوستا حتی سیاها آفریقا
