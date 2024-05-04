@@ -47,7 +47,7 @@ class player extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              VoiceMessageView(
+              VoiceMessagePlayer(
                 controller: VoiceController(
                   audioSrc:
                       'https://dl.solahangs.com/Music/1403/02/H/128/Hiphopologist%20-%20Shakkak%20%28128%29.mp3',
@@ -69,7 +69,7 @@ class player extends StatelessWidget {
                 innerPadding: 12,
                 cornerRadius: 20,
               ),
-              VoiceMessageView(
+              VoiceMessagePlayer(
                 controller: VoiceController(
                   audioSrc:
                       'https://cdn.pixabay.com/download/audio/2022/11/16/audio_a2b0a45199.mp3?filename=6-islamic-background-sounds-alfa-relaxing-music-126060.mp3',

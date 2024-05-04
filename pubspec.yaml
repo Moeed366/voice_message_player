@@ -1,7 +1,7 @@
-name: voice_message_package
+name: voice_message_player
 description: Flutter package to play/puase voice message in chat messengers.
 version: 2.2.1
-homepage: https://mehran.monster/
+homepage: https://github.com/Moeed366/
 
 environment:
   sdk: ">=2.17.0 <4.0.0"
