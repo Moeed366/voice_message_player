@@ -1,17 +1,14 @@
-## Voicey - Flutter voice message player
+## Flutter voice message player
 
 <!-- <p align="center">
-    <img src="voicey-logos.jpeg" alt="voice message package" width="200" style="border-radius: 50%; overflow:hidden;">
+    <img src="voicey-logos.jpeg" alt="voice message player" width="200" style="border-radius: 50%; overflow:hidden;">
 </p> -->
 <div style="height:6px;"></div>
 
 <div style="height:32px;"></div>
 
-![](https://img.shields.io/github/license/mehranshoqi/voice_message_player?color=FF5D73&style=for-the-badge)
-![](https://img.shields.io/github/languages/code-size/mehranshoqi/voice_message_player?color=6FD08C&label=Size&style=for-the-badge)
-![](https://img.shields.io/github/issues/mehranshoqi/voice_message_player?color=E7E393&style=for-the-badge)
-![](https://img.shields.io/pub/v/voice_message_package?color=D1F5FF&style=for-the-badge)
-![](https://img.shields.io/github/last-commit/mehranshoqi/voice_message_player?color=F0F600&style=for-the-badge)
+![](https://github.com/Moeed366/images/assets/101408316/d39904f4-9417-4c8b-919c-bc8c31c9079d)
+
 
 ## Demo
 
