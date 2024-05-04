@@ -11,7 +11,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   sizer:
-  voice_message_package: 
+  voice_message_player:
     path: ../
 
 

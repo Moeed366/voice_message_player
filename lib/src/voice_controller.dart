@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:voice_message_package/src/helpers/play_status.dart';
-import 'package:voice_message_package/src/helpers/utils.dart';
+import 'package:voice_message_player/src/helpers/play_status.dart';
+import 'package:voice_message_player/src/helpers/utils.dart';
 
 /// A controller for managing voice playback.
 ///

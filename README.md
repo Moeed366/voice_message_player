@@ -39,7 +39,7 @@ First add voicey to your pubsbec.yaml file:
 
 ```yml
 dependencies:
-  voice_message_package: <latest-version>
+  voice_message_player: <latest-version>
 ```
 
 <div style="height:12px;"></div>

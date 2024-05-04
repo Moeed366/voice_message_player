@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:voice_message_package/src/helpers/utils.dart';
+import 'package:voice_message_player/src/helpers/utils.dart';
 
 /// A widget that represents a single noise.
 ///

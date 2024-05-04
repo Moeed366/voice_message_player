@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:voice_message_package/src/helpers/play_status.dart';
-import 'package:voice_message_package/src/helpers/utils.dart';
-import 'package:voice_message_package/src/voice_controller.dart';
-import 'package:voice_message_package/src/widgets/noises.dart';
-import 'package:voice_message_package/src/widgets/play_pause_button.dart';
+import 'package:voice_message_player/src/helpers/play_status.dart';
+import 'package:voice_message_player/src/helpers/utils.dart';
+import 'package:voice_message_player/src/voice_controller.dart';
+import 'package:voice_message_player/src/widgets/noises.dart';
+import 'package:voice_message_player/src/widgets/play_pause_button.dart';
 
 /// A widget that displays a voice message view with play/pause functionality.
 ///

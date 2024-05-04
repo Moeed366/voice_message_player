@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:voice_message_package/src/widgets/single_noise.dart';
+import 'package:voice_message_player/src/widgets/single_noise.dart';
 
 /// A widget that represents a collection of noises.
 ///
