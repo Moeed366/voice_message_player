@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:voice_message_player/src/helpers/play_status.dart';
 import 'package:voice_message_player/src/helpers/utils.dart';
-import 'package:voice_message_player/src/voice_controller.dart';
-import 'package:voice_message_player/src/widgets/noises.dart';
-import 'package:voice_message_player/src/widgets/play_pause_button.dart';
+
+import '../voice_message_player.dart';
+import 'widgets/noises.dart';
+import 'widgets/play_pause_button.dart';
 
 /// A widget that displays a voice message view with play/pause functionality.
 ///
@@ -18,7 +19,7 @@ class VoiceMessagePlayer extends StatefulWidget {
       this.backgroundColor = Colors.white,
       this.activeSliderColor = Colors.red,
       this.notActiveSliderColor,
-      this.circlesColor = Colors.red,
+      this.circlesColor = Colors.grey,
       this.innerPadding = 12,
       this.cornerRadius = 20,
       // this.playerWidth = 170,
@@ -107,7 +108,6 @@ class VoiceMessagePlayer extends StatefulWidget {
 class _VoiceMessagePlayerState extends State<VoiceMessagePlayer> {
   @override
   void dispose() async {
-    print("-------------------dgfddgfdgfdgd-------------------------------");
     widget.controller.dispose();
     widget.controller.cancelDownload();
     widget.controller.stopPlaying();
@@ -195,6 +195,7 @@ class _VoiceMessagePlayerState extends State<VoiceMessagePlayer> {
           alignment: Alignment.center,
           children: [
             /// noises
+
             Noises(
               rList: widget.controller.randoms!,
               activeSliderColor: widget.activeSliderColor,

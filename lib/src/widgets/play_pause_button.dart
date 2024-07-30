@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:voice_message_player/src/widgets/loading_widget.dart';
-import 'package:voice_message_player/voice_message_player.dart';
+
+import '../voice_controller.dart';
+import 'loading_widget.dart';
 
 /// A widget representing a play/pause button.
 ///

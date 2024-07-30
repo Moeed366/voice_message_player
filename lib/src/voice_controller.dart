@@ -6,8 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:voice_message_player/src/helpers/play_status.dart';
 import 'package:voice_message_player/src/helpers/utils.dart';
+
+import 'helpers/play_status.dart';
 
 /// A controller for managing voice playback.
 ///
@@ -104,16 +105,20 @@ class VoiceController extends MyTicker {
 
   /// Initializes the voice controller.
   Future init() async {
-    print(
-        "--------------init-----------------------------------------------------");
+    if (kDebugMode) {
+      print(
+          "--------------init-----------------------------------------------------");
+    }
     await setMaxDuration(audioSrc);
     _updateUi();
   }
 
   Future play() async {
     try {
-      print(
-          "--------------play--------${playStatus}---------------------------------------------");
+      if (kDebugMode) {
+        print(
+            "--------------play--------$playStatus---------------------------------------------");
+      }
       playStatus = PlayStatus.downloading;
       _updateUi();
       if (isFile) {
@@ -167,20 +172,16 @@ class VoiceController extends MyTicker {
     updater.notifyListeners();
   }
 
-  /// Stops playing the voice.
-  /* Future stopPlaying() async {
-    _player.pause();
-    playStatus = PlayStatus.stop;
-  }*/
   void stopPlaying() {
     _player.pause();
     playStatus = PlayStatus.stop;
     _updateUi();
   }
 
-  @override
   Future<void> dispose() async {
-    // Dispose of the audio player and cancel streams
+    if (kDebugMode) {
+      print("player disposed....");
+    }
     await _player.dispose();
     positionStream?.cancel();
     playerStateStream?.cancel();
@@ -208,8 +209,10 @@ class VoiceController extends MyTicker {
 
   /// Pauses the voice playback.
   void pausePlaying() {
-    print(
-        "--------------pausePlaying--------${playStatus}---------------------------------------------");
+    if (kDebugMode) {
+      print(
+          "--------------pausePlaying--------$playStatus---------------------------------------------");
+    }
     _player.pause();
     playStatus = PlayStatus.pause;
     _updateUi();

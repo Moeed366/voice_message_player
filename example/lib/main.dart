@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:voice_message_player/voice_message_player.dart';
+import 'package:voice_message_player/src/voice_controller.dart';
+import 'package:voice_message_player/src/voice_message_view.dart';
 
 void main() => runApp(MyApp());
 

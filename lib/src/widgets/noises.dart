@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:voice_message_player/src/widgets/single_noise.dart';
+
+import 'single_noise.dart';
 
 /// A widget that represents a collection of noises.
 ///
@@ -20,17 +21,33 @@ class Noises extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: rList
-          .map(
-            (e) => SingleNoise(
-              activeSliderColor: activeSliderColor,
-              height: e,
-            ),
-          )
-          .toList(),
+    return Stack(
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: rList
+              .map(
+                (e) => SingleNoise(
+                  activeSliderColor: Colors.black,
+                  height: e,
+                ),
+              )
+              .toList(),
+        ),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: rList
+              .map(
+                (e) => SingleNoise(
+                  activeSliderColor: activeSliderColor,
+                  height: e,
+                ),
+              )
+              .toList(),
+        ),
+      ],
     );
   }
 }
