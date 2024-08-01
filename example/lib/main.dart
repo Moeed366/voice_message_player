@@ -8,30 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Navigate to the next screen
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => player()),
-            );
-          },
-          child: Text('Next Screen'),
-        ),
-      ),
+      home: player(),
     );
   }
 }
@@ -42,11 +19,11 @@ class player extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: Colors.grey,
       body: Center(
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               VoiceMessagePlayer(
                 controller: VoiceController(
@@ -69,6 +46,9 @@ class player extends StatelessWidget {
                 ),
                 innerPadding: 12,
                 cornerRadius: 20,
+              ),
+              SizedBox(
+                height: 20,
               ),
               VoiceMessagePlayer(
                 controller: VoiceController(
